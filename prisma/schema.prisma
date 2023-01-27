@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Conversation {
+    id              Int       @id @default(autoincrement())
+    userMessage     String
+    botResponse     String
+    sessionId       String
+}
+
+model UserPreferences {
+  id              Int       @id @default(autoincrement())
+  location        String
+  budget          String
+}
