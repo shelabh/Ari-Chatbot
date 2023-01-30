@@ -38,17 +38,24 @@ async function runCompletion (message, sessionId) {
 		    	sessionId: sessionId
 		},
 	});
-	const history = conversationHistory.slice(-5);
-	
-	const basePrompt = "The following is a converstaion with an friendly AI Travel assistant which answers travel queries inside India. The assistant has a casual tone. The assistant can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Do not complete the users's message and provide some random answer. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address. ";
-	let prompt = basePrompt + history + message;
-
-	const completion = await openai.createCompletion({
-	    model: "text-davinci-003",
-	    prompt: prompt,
-	    temperature: 0.6,
-	    max_tokens: 1500,
+	let historyString = "";
+	conversationHistory.forEach(conversation => {
+	    historyString += conversation.text + "\n";
 	});
+	
+	const basePrompt = "The following is a converstaion with an AI Travel assistant named Ari which answers travel queries inside India. The assistant is helpful, creative, clever, and very friendly. Reply politely to greetings and goodbyes. The assistant can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address. ";
+	const prompt = `${basePrompt}${historyString}${message}\n`;
+	
+	const completion = await openai.createCompletion({
+		model: "text-davinci-003",
+		prompt: prompt,
+		temperature: 0.5,
+		max_tokens: 1500,
+		top_p: 1,
+		frequency_penalty: 0,
+		presence_penalty: 0,
+	});
+	
 	return completion.data.choices[0].text;
 }
 
@@ -58,12 +65,13 @@ client.on('message', async message => {
 	const sessionId = message.from;
 	console.log(message.body);
 	
-	if(message.body && message.body !== undefined) {	
-		if (message.body.startsWith('#')) {
-			
-			
+	if(message.body && message.body !== undefined) {
+		if (message.body.startsWith("#report")){
+			client.sendMessage(message.from, "Apologies for the trouble. Please report your issue here\nhttps://forms.gle/N4eZUVC3N2Sf67PPA")
+		}
+		else {
 			const botResponse = await runCompletion(message.body);
-			client.sendMessage(message.from, botResponse);
+			client.sendMessage(message.from, botResponse.trim());
 			const conversation = await prisma.conversation.create({
 				data: {
 					userMessage: message.body,
@@ -71,8 +79,7 @@ client.on('message', async message => {
 					botResponse: botResponse
 				}
 			});
-		};
-		
+		}
 	}	  
 });
 
