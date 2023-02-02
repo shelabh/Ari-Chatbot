@@ -7,24 +7,28 @@ const prisma = new PrismaClient()
 const app = express();
 const PORT = 3000;
   
-const { Client } = require('whatsapp-web.js');
+
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const { Configuration, OpenAIApi } = require("openai");
 require('dotenv').config()
 
 
-
-
-
-const client = new Client();
+const client = new Client({
+	authStrategy: new LocalAuth()
+});
 
 client.on('qr', (qr) => {
 	qrcode.generate(qr, {small: true});
 });
-    
+client.on('authenticated', (session) => {
+	console.log('ARI => Authenticated');
+});
 client.on('ready', () => {
 	console.log('Client is ready!');
 });
+
+     
 
 const configuration = new Configuration({
 	apiKey: process.env.OPENAI_API_KEY,
@@ -40,16 +44,19 @@ async function runCompletion (message, sessionId) {
 	});
 	let historyString = "";
 	conversationHistory.forEach(conversation => {
-	    historyString += conversation.text + "\n";
+	    historyString = conversation.text + "\n";
 	});
 	
-	const basePrompt = "The following is a converstaion with an AI Travel assistant named Ari which answers travel queries inside India. The assistant is helpful, creative, clever, and very friendly. Reply politely to greetings and goodbyes. The assistant can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address. ";
+	
+	const basePrompt = " You are ARI, an ai travel assistant. Reply politely to greetings, goodbyes, appreciation, compliments, abuses and other normal conversation things. Provide deatiled information to user. Provide the contents of the answer of the travel-related query in a list format and easy to read format, use emojis to add more fun and make it more casual. You can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address. Do not repeat the infromation provided in the same response.";
 	const prompt = `${basePrompt}${historyString}${message}\n`;
+	
+	// The following is a converstaion with an AI Travel assistant named Ari which answers travel queries inside India. The assistant is helpful, creative, clever, and very friendly. Reply politely to greetings and goodbyes. The assistant can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address.
 	
 	const completion = await openai.createCompletion({
 		model: "text-davinci-003",
 		prompt: prompt,
-		temperature: 0.5,
+		temperature: 0.3,
 		max_tokens: 1500,
 		top_p: 1,
 		frequency_penalty: 0,
