@@ -1,6 +1,6 @@
 const express = require('express');
 // import prisma from '../lib/prisma';
-
+const browser = await puppeteer.launch({args: ['--no-sandbox']});
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
   
