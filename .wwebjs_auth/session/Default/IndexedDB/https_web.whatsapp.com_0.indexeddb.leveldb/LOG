@@ -1,18 +1,12 @@
-2023/02/03-04:16:33.260 13b03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/03-04:16:33.260 13b03 Recovering log #107
-2023/02/03-04:16:33.318 13b03 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000107.log 
-2023/02/03-04:16:51.951 ac03 Compacting 1@1 + 1@2 files
-2023/02/03-04:16:52.019 ac03 Generated table #111@1: 34124 keys, 1334566 bytes
-2023/02/03-04:16:52.019 ac03 Compacted 1@1 + 1@2 files => 1334566 bytes
-2023/02/03-04:16:52.058 ac03 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/02/03-04:16:52.059 ac03 Delete type=2 #5
-2023/02/03-04:16:52.059 ac03 Delete type=2 #109
-2023/02/03-04:16:52.229 1190f Level-0 table #113: started
-2023/02/03-04:16:52.273 1190f Level-0 table #113: 1208322 bytes OK
-2023/02/03-04:16:52.314 1190f Delete type=0 #107
-2023/02/03-04:16:57.102 a803 Compacting 1@1 + 1@2 files
-2023/02/03-04:16:57.179 a803 Generated table #114@1: 39164 keys, 1599419 bytes
-2023/02/03-04:16:57.179 a803 Compacted 1@1 + 1@2 files => 1599419 bytes
-2023/02/03-04:16:57.218 a803 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/02/03-04:16:57.219 a803 Delete type=2 #111
-2023/02/03-04:16:57.219 a803 Delete type=2 #113
+2023/02/03-05:06:32.131 ab03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/03-05:06:32.132 ab03 Recovering log #112
+2023/02/03-05:06:32.221 ab03 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000112.log 
+2023/02/03-05:06:43.729 11e03 Level-0 table #117: started
+2023/02/03-05:06:43.773 11e03 Level-0 table #117: 1203850 bytes OK
+2023/02/03-05:06:43.818 11e03 Delete type=0 #112
+2023/02/03-05:06:44.632 ab03 Compacting 1@1 + 1@2 files
+2023/02/03-05:06:44.725 ab03 Generated table #118@1: 50211 keys, 2124829 bytes
+2023/02/03-05:06:44.725 ab03 Compacted 1@1 + 1@2 files => 2124829 bytes
+2023/02/03-05:06:44.765 ab03 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/02/03-05:06:44.765 ab03 Delete type=2 #117
+2023/02/03-05:06:44.767 ab03 Delete type=2 #114

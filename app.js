@@ -1,6 +1,6 @@
 const express = require('express');
 // import prisma from '../lib/prisma';
-const browser = await puppeteer.launch({args: ['--no-sandbox']});
+const puppeteer = require('puppeteer');
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
   
@@ -71,6 +71,7 @@ async function runCompletion (message, sessionId) {
 client.on('message', async message => {
 	const sessionId = message.from;
 	console.log(message.body);
+	const browser = await puppeteer.launch({args: ['--no-sandbox']});
 	
 	if(message.body && message.body !== undefined) {
 		if (message.body.startsWith("#report")){
