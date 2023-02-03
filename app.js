@@ -66,12 +66,16 @@ async function runCompletion (message, sessionId) {
 	return completion.data.choices[0].text;
 }
 
+(async () => {
+	const browser = await puppeteer.launch({args: ['--no-sandbox']});
+	// rest of your code here
+})();
 
 
 client.on('message', async message => {
 	const sessionId = message.from;
 	console.log(message.body);
-	const browser = await puppeteer.launch({args: ['--no-sandbox']});
+
 	
 	if(message.body && message.body !== undefined) {
 		if (message.body.startsWith("#report")){
