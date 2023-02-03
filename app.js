@@ -66,14 +66,22 @@ async function runCompletion (message, sessionId) {
 	return completion.data.choices[0].text;
 }
 
-(async () => {
-	const browser = await puppeteer.launch({args: ['--no-sandbox']});
-	// rest of your code here
-})();
+// (async () => {
+// 	const browser = await puppeteer.launch({
+// 		args: ['--no-sandbox'],
+// 		headless: true
+// 	});
+// 	// rest of your code here
+// })();
 
 
 client.on('message', async message => {
+	const browser = await puppeteer.launch({
+		args: ['--no-sandbox'],
+		headless: true
+	});
 	const sessionId = message.from;
+	console.log(sessionId)
 	console.log(message.body);
 
 	
@@ -92,7 +100,8 @@ client.on('message', async message => {
 				}
 			});
 		}
-	}	  
+	}
+	await browser.close();	  
 });
 
 
