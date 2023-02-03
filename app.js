@@ -18,6 +18,16 @@ const client = new Client({
 	authStrategy: new LocalAuth()
 });
 
+
+(async () => {
+	const browser = await puppeteer.launch({
+		args: ['--no-sandbox'],
+		headless: true
+	});
+	// rest of your code here
+	await browser.close();
+})();
+
 client.on('qr', (qr) => {
 	qrcode.generate(qr, {small: true});
 });
@@ -66,20 +76,10 @@ async function runCompletion (message, sessionId) {
 	return completion.data.choices[0].text;
 }
 
-// (async () => {
-// 	const browser = await puppeteer.launch({
-// 		args: ['--no-sandbox'],
-// 		headless: true
-// 	});
-// 	// rest of your code here
-// })();
 
 
 client.on('message', async message => {
-	const browser = await puppeteer.launch({
-		args: ['--no-sandbox'],
-		headless: true
-	});
+	
 	const sessionId = message.from;
 	console.log(sessionId)
 	console.log(message.body);
@@ -101,7 +101,7 @@ client.on('message', async message => {
 			});
 		}
 	}
-	await browser.close();	  
+	  
 });
 
 
@@ -112,7 +112,7 @@ client.initialize();
 
 
 app.listen(PORT, (error) =>{
-	if(!error)
+	if(!error) 
 		console.log("Server is Successfully Running, and App is listening on port "+ PORT)
 	else 
 		console.log("Error occurred, server can't start", error);
