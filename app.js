@@ -46,16 +46,24 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 async function runCompletion (message, sessionId) {
-	
+	console.log(sessionId)
 	const conversationHistory = await prisma.conversation.findMany({
 		where: {
 		    	sessionId: sessionId
 		},
 	});
+	// console.log(conversationHistory)
+	
 	let historyString = "";
-	conversationHistory.forEach(conversation => {
-	    historyString = conversation.text + "\n";
-	});
+	if (conversationHistory.length > 0) {
+		const lastTenMessages = conversationHistory.slice(-10);
+		lastTenMessages.forEach(conversation => {
+			console.log(conversation)
+		  	historyString += conversation.userMessage + "\n";
+			historyString += conversation.botResponse + "\n";
+		});
+	}
+	console.log(historyString);
 	
 	
 	const basePrompt = " You are ARI, an ai travel assistant. Reply politely to greetings, goodbyes, appreciation, compliments, abuses and other normal conversation things. Provide deatiled information to user. Provide the contents of the answer of the travel-related query in a list format and easy to read format, use emojis to add more fun and make it more casual. You can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address. Do not repeat the infromation provided in the same response.";
@@ -90,7 +98,7 @@ client.on('message', async message => {
 			client.sendMessage(message.from, "Apologies for the trouble. Please report your issue here\nhttps://forms.gle/N4eZUVC3N2Sf67PPA")
 		}
 		else {
-			const botResponse = await runCompletion(message.body);
+			const botResponse = await runCompletion(message.body, sessionId);
 			client.sendMessage(message.from, botResponse.trim());
 			const conversation = await prisma.conversation.create({
 				data: {
