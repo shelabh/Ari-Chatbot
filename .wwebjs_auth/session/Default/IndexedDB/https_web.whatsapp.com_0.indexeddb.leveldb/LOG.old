@@ -1,3 +1,20 @@
-2023/02/04-07:00:06.156 af03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/04-07:00:06.156 af03 Recovering log #284
-2023/02/04-07:00:06.198 af03 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000284.log 
+2023/02/04-07:00:52.996 a503 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/04-07:00:52.997 a503 Recovering log #284
+2023/02/04-07:00:53.065 a503 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000284.log 
+2023/02/04-07:01:05.630 8003 Level-0 table #293: started
+2023/02/04-07:01:05.677 8003 Level-0 table #293: 1262746 bytes OK
+2023/02/04-07:01:05.717 8003 Delete type=0 #284
+2023/02/04-07:01:06.254 a503 Compacting 1@1 + 5@2 files
+2023/02/04-07:01:06.345 a503 Generated table #294@1: 29339 keys, 2259905 bytes
+2023/02/04-07:01:06.407 a503 Generated table #295@1: 23859 keys, 2269854 bytes
+2023/02/04-07:01:06.476 a503 Generated table #296@1: 26617 keys, 2273997 bytes
+2023/02/04-07:01:06.559 a503 Generated table #297@1: 70909 keys, 2270954 bytes
+2023/02/04-07:01:06.606 a503 Generated table #298@1: 36665 keys, 819070 bytes
+2023/02/04-07:01:06.606 a503 Compacted 1@1 + 5@2 files => 9893780 bytes
+2023/02/04-07:01:06.645 a503 compacted to: files[ 0 0 5 0 0 0 0 ]
+2023/02/04-07:01:06.646 a503 Delete type=2 #288
+2023/02/04-07:01:06.646 a503 Delete type=2 #289
+2023/02/04-07:01:06.646 a503 Delete type=2 #290
+2023/02/04-07:01:06.646 a503 Delete type=2 #293
+2023/02/04-07:01:06.646 a503 Delete type=2 #287
+2023/02/04-07:01:06.646 a503 Delete type=2 #286

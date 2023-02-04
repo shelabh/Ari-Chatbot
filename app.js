@@ -113,7 +113,7 @@ async function handleWeatherQuery(message) {
 		weatherMessage += `The temperature is ${(weatherData.main.temp - 273.15).toFixed(1)}°C. `;
 		weatherMessage += `The humidity is ${weatherData.main.humidity}%. `;
 		
-		console.log(weatherMessage);
+		// console.log(weatherMessage);
 		// send the weather message using the WhatsApp-web.js library
 		return weatherMessage;
 	}
