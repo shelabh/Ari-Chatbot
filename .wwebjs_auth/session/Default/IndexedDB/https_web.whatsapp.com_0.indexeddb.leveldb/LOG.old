@@ -1,26 +1,27 @@
-2023/02/06-17:08:51.045 8003 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/06-17:08:51.046 8003 Recovering log #579
-2023/02/06-17:08:51.129 8003 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000579.log 
-2023/02/06-17:09:02.479 11a03 Level-0 table #591: started
-2023/02/06-17:09:02.524 11a03 Level-0 table #591: 1255316 bytes OK
-2023/02/06-17:09:02.567 11a03 Delete type=0 #579
-2023/02/06-17:09:02.571 11a03 Compacting 1@1 + 8@2 files
-2023/02/06-17:09:02.659 11a03 Generated table #592@1: 29466 keys, 2257977 bytes
-2023/02/06-17:09:02.734 11a03 Generated table #593@1: 23867 keys, 2272398 bytes
-2023/02/06-17:09:02.812 11a03 Generated table #594@1: 23766 keys, 2265829 bytes
-2023/02/06-17:09:02.889 11a03 Generated table #595@1: 23560 keys, 2262532 bytes
-2023/02/06-17:09:02.968 11a03 Generated table #596@1: 23680 keys, 2265752 bytes
-2023/02/06-17:09:03.055 11a03 Generated table #597@1: 89177 keys, 2262402 bytes
-2023/02/06-17:09:03.131 11a03 Generated table #598@1: 46597 keys, 2319984 bytes
-2023/02/06-17:09:03.215 11a03 Generated table #599@1: 75746 keys, 2207015 bytes
-2023/02/06-17:09:03.215 11a03 Compacted 1@1 + 8@2 files => 18113889 bytes
-2023/02/06-17:09:03.255 11a03 compacted to: files[ 0 0 8 0 0 0 0 ]
-2023/02/06-17:09:03.255 11a03 Delete type=2 #588
-2023/02/06-17:09:03.255 11a03 Delete type=2 #587
-2023/02/06-17:09:03.255 11a03 Delete type=2 #586
-2023/02/06-17:09:03.255 11a03 Delete type=2 #584
-2023/02/06-17:09:03.255 11a03 Delete type=2 #591
-2023/02/06-17:09:03.255 11a03 Delete type=2 #585
-2023/02/06-17:09:03.256 11a03 Delete type=2 #581
-2023/02/06-17:09:03.256 11a03 Delete type=2 #582
-2023/02/06-17:09:03.256 11a03 Delete type=2 #583
+2023/02/06-18:18:05.305 8003 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/06-18:18:05.305 8003 Recovering log #590
+2023/02/06-18:18:05.367 8003 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000590.log 
+2023/02/06-18:18:17.937 8003 Level-0 table #602: started
+2023/02/06-18:18:17.982 8003 Level-0 table #602: 1246042 bytes OK
+2023/02/06-18:18:18.024 8003 Delete type=0 #590
+2023/02/06-18:18:18.593 fc03 Compacting 1@1 + 8@2 files
+2023/02/06-18:18:18.679 fc03 Generated table #603@1: 29529 keys, 2257559 bytes
+2023/02/06-18:18:18.762 fc03 Generated table #604@1: 23846 keys, 2271107 bytes
+2023/02/06-18:18:18.832 fc03 Generated table #605@1: 23750 keys, 2263770 bytes
+2023/02/06-18:18:18.905 fc03 Generated table #606@1: 23637 keys, 2259662 bytes
+2023/02/06-18:18:18.973 fc03 Generated table #607@1: 23605 keys, 2268039 bytes
+2023/02/06-18:18:19.054 fc03 Generated table #608@1: 81046 keys, 2262231 bytes
+2023/02/06-18:18:19.119 fc03 Generated table #609@1: 54522 keys, 2321954 bytes
+2023/02/06-18:18:19.187 fc03 Generated table #610@1: 68761 keys, 2226930 bytes
+2023/02/06-18:18:19.213 fc03 Generated table #611@1: 11832 keys, 247588 bytes
+2023/02/06-18:18:19.213 fc03 Compacted 1@1 + 8@2 files => 18378840 bytes
+2023/02/06-18:18:19.249 fc03 compacted to: files[ 0 0 9 0 0 0 0 ]
+2023/02/06-18:18:19.250 fc03 Delete type=2 #599
+2023/02/06-18:18:19.250 fc03 Delete type=2 #598
+2023/02/06-18:18:19.250 fc03 Delete type=2 #602
+2023/02/06-18:18:19.250 fc03 Delete type=2 #593
+2023/02/06-18:18:19.250 fc03 Delete type=2 #592
+2023/02/06-18:18:19.250 fc03 Delete type=2 #595
+2023/02/06-18:18:19.250 fc03 Delete type=2 #594
+2023/02/06-18:18:19.250 fc03 Delete type=2 #596
+2023/02/06-18:18:19.250 fc03 Delete type=2 #597
