@@ -1,6 +1,5 @@
 const express = require('express');
 // import prisma from '../lib/prisma';
-const puppeteer = require('puppeteer');
 
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
