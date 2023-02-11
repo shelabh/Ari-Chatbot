@@ -1,3 +1,2 @@
-2023/02/11-11:17:04.968 13a03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Session Storage/MANIFEST-000001
-2023/02/11-11:17:04.969 13a03 Recovering log #3
-2023/02/11-11:17:04.969 13a03 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Session Storage/000003.log 
+2023/02/11-12:20:26.396 a803 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Session Storage since it was missing.
+2023/02/11-12:20:26.464 a803 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Session Storage/MANIFEST-000001
