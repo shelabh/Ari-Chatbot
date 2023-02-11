@@ -1,3 +1,2 @@
-2023/02/11-10:33:13.248 8103 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/File System/Origins/MANIFEST-000001
-2023/02/11-10:33:13.248 8103 Recovering log #3
-2023/02/11-10:33:13.248 8103 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/File System/Origins/000003.log 
+2023/02/11-11:15:55.022 15a07 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/File System/Origins since it was missing.
+2023/02/11-11:15:55.080 15a07 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/File System/Origins/MANIFEST-000001
