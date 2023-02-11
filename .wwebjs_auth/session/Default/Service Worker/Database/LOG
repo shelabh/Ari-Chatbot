@@ -1,3 +1,2 @@
-2023/02/11-09:41:48.808 13907 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Service Worker/Database/MANIFEST-000001
-2023/02/11-09:41:48.808 13907 Recovering log #3
-2023/02/11-09:41:48.808 13907 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Service Worker/Database/000003.log 
+2023/02/11-09:54:04.673 1f903 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Service Worker/Database since it was missing.
+2023/02/11-09:54:04.729 1f903 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Service Worker/Database/MANIFEST-000001

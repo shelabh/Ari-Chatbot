@@ -1,3 +1,28 @@
-2023/02/11-09:41:50.998 fd03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/11-09:41:50.998 fd03 Recovering log #86
-2023/02/11-09:41:51.032 fd03 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000086.log 
+2023/02/11-09:54:04.141 15e03 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/02/11-09:54:04.196 15e03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/11-09:54:04.328 1360f Level-0 table #5: started
+2023/02/11-09:54:04.366 1360f Level-0 table #5: 7462 bytes OK
+2023/02/11-09:54:04.403 1360f Delete type=0 #3
+2023/02/11-09:54:04.403 1360f Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/02/11-09:54:35.201 12e03 Level-0 table #7: started
+2023/02/11-09:54:35.227 12e03 Level-0 table #7: 1042211 bytes OK
+2023/02/11-09:54:35.266 12e03 Delete type=0 #4
+2023/02/11-09:54:41.312 ac03 Level-0 table #9: started
+2023/02/11-09:54:41.353 ac03 Level-0 table #9: 1201298 bytes OK
+2023/02/11-09:54:41.398 ac03 Delete type=0 #6
+2023/02/11-09:54:43.018 16103 Compacting 1@0 + 1@1 files
+2023/02/11-09:54:43.097 16103 Generated table #10@0: 56019 keys, 1298966 bytes
+2023/02/11-09:54:43.097 16103 Compacted 1@0 + 1@1 files => 1298966 bytes
+2023/02/11-09:54:43.136 16103 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/02/11-09:54:43.137 16103 Delete type=2 #7
+2023/02/11-09:54:43.137 16103 Delete type=2 #9
+2023/02/11-09:54:50.959 16103 Level-0 table #12: started
+2023/02/11-09:54:50.998 16103 Level-0 table #12: 1163616 bytes OK
+2023/02/11-09:54:51.035 16103 Delete type=0 #8
+2023/02/11-09:54:51.037 16103 Compacting 1@0 + 1@1 files
+2023/02/11-09:54:51.131 16103 Generated table #13@0: 62109 keys, 2247676 bytes
+2023/02/11-09:54:51.157 16103 Generated table #14@0: 8911 keys, 175325 bytes
+2023/02/11-09:54:51.157 16103 Compacted 1@0 + 1@1 files => 2423001 bytes
+2023/02/11-09:54:51.193 16103 compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/02/11-09:54:51.194 16103 Delete type=2 #12
+2023/02/11-09:54:51.194 16103 Delete type=2 #10
