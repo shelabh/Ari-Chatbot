@@ -1,2 +1,3 @@
-2023/02/11-10:23:55.413 1f503 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Platform Notifications since it was missing.
-2023/02/11-10:23:55.470 1f503 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Platform Notifications/MANIFEST-000001
+2023/02/11-10:33:23.664 8103 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Platform Notifications/MANIFEST-000001
+2023/02/11-10:33:23.664 8103 Recovering log #3
+2023/02/11-10:33:23.664 8103 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/Platform Notifications/000003.log 
