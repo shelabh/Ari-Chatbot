@@ -1,61 +1,15 @@
-2023/02/11-12:20:29.427 16403 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
-2023/02/11-12:20:29.494 16403 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/11-12:20:29.735 8403 Level-0 table #5: started
-2023/02/11-12:20:29.777 8403 Level-0 table #5: 7462 bytes OK
-2023/02/11-12:20:29.823 8403 Delete type=0 #3
-2023/02/11-12:20:29.826 fb03 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
-2023/02/11-12:21:09.836 8403 Level-0 table #7: started
-2023/02/11-12:21:09.944 8403 Level-0 table #7: 1063828 bytes OK
-2023/02/11-12:21:09.984 8403 Delete type=0 #4
-2023/02/11-12:21:21.218 fc03 Level-0 table #9: started
-2023/02/11-12:21:21.323 fc03 Level-0 table #9: 1110527 bytes OK
-2023/02/11-12:21:21.368 fc03 Delete type=0 #6
-2023/02/11-12:21:21.399 fc03 Compacting 1@0 + 1@1 files
-2023/02/11-12:21:21.693 fc03 Generated table #10@0: 60609 keys, 1304270 bytes
-2023/02/11-12:21:21.694 fc03 Compacted 1@0 + 1@1 files => 1304270 bytes
-2023/02/11-12:21:21.734 fc03 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/02/11-12:21:21.736 fc03 Delete type=2 #7
-2023/02/11-12:21:21.736 fc03 Delete type=2 #9
-2023/02/11-12:21:30.551 16603 Level-0 table #12: started
-2023/02/11-12:21:30.662 16603 Level-0 table #12: 1164282 bytes OK
-2023/02/11-12:21:30.710 16603 Delete type=0 #8
-2023/02/11-12:21:30.731 16603 Compacting 1@0 + 1@1 files
-2023/02/11-12:21:31.222 16603 Generated table #13@0: 63984 keys, 2242190 bytes
-2023/02/11-12:21:31.285 16603 Generated table #14@0: 11173 keys, 195499 bytes
-2023/02/11-12:21:31.285 16603 Compacted 1@0 + 1@1 files => 2437689 bytes
-2023/02/11-12:21:31.325 16603 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-12:21:31.327 16603 Delete type=2 #12
-2023/02/11-12:21:31.327 16603 Delete type=2 #10
-2023/02/11-12:21:41.457 1cb03 Compacting 1@1 + 1@2 files
-2023/02/11-12:21:41.751 1cb03 Generated table #15@1: 30065 keys, 1963003 bytes
-2023/02/11-12:21:41.751 1cb03 Compacted 1@1 + 1@2 files => 1963003 bytes
-2023/02/11-12:21:41.800 1cb03 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/02/11-12:21:41.801 1cb03 Delete type=2 #13
-2023/02/11-12:21:41.801 1cb03 Delete type=2 #5
-2023/02/11-12:21:42.898 1cb03 Level-0 table #17: started
-2023/02/11-12:21:42.993 1cb03 Level-0 table #17: 1005477 bytes OK
-2023/02/11-12:21:43.043 1cb03 Delete type=0 #11
-2023/02/11-12:21:43.067 1cb03 Compacting 1@0 + 1@1 files
-2023/02/11-12:21:43.273 1cb03 Generated table #18@0: 48089 keys, 876633 bytes
-2023/02/11-12:21:43.273 1cb03 Compacted 1@0 + 1@1 files => 876633 bytes
-2023/02/11-12:21:43.321 1cb03 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/02/11-12:21:43.322 1cb03 Delete type=2 #14
-2023/02/11-12:21:43.322 1cb03 Delete type=2 #17
-2023/02/11-12:21:44.282 1a503 Compacting 1@1 + 1@2 files
-2023/02/11-12:21:44.587 1a503 Generated table #19@1: 36937 keys, 2210512 bytes
-2023/02/11-12:21:44.630 1a503 Generated table #20@1: 9165 keys, 176515 bytes
-2023/02/11-12:21:44.630 1a503 Compacted 1@1 + 1@2 files => 2387027 bytes
-2023/02/11-12:21:44.674 1a503 compacted to: files[ 0 0 2 0 0 0 0 ]
-2023/02/11-12:21:44.675 1a503 Delete type=2 #15
-2023/02/11-12:21:44.675 1a503 Delete type=2 #18
-2023/02/11-12:21:58.262 1a503 Level-0 table #22: started
-2023/02/11-12:21:58.357 1a503 Level-0 table #22: 1067952 bytes OK
-2023/02/11-12:21:58.400 1a503 Delete type=0 #16
-2023/02/11-12:21:58.463 1cb03 Compacting 1@1 + 2@2 files
-2023/02/11-12:21:58.719 1cb03 Generated table #23@1: 28608 keys, 2201679 bytes
-2023/02/11-12:21:58.850 1cb03 Generated table #24@1: 35647 keys, 725089 bytes
-2023/02/11-12:21:58.850 1cb03 Compacted 1@1 + 2@2 files => 2926768 bytes
-2023/02/11-12:21:58.890 1cb03 compacted to: files[ 0 0 2 0 0 0 0 ]
-2023/02/11-12:21:58.892 1cb03 Delete type=2 #20
-2023/02/11-12:21:58.892 1cb03 Delete type=2 #22
-2023/02/11-12:21:58.892 1cb03 Delete type=2 #19
+2023/02/11-14:26:17.589 15c03 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/02/11-14:26:17.664 15c03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/11-14:26:17.798 fb03 Level-0 table #5: started
+2023/02/11-14:26:17.838 fb03 Level-0 table #5: 7462 bytes OK
+2023/02/11-14:26:17.875 fb03 Delete type=0 #3
+2023/02/11-14:26:17.875 fb03 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/02/11-14:26:48.107 1f703 Level-0 table #7: started
+2023/02/11-14:26:48.184 1f703 Level-0 table #7: 1135423 bytes OK
+2023/02/11-14:26:48.223 1f703 Delete type=0 #4
+2023/02/11-14:27:24.268 1b003 Compacting 1@1 + 1@2 files
+2023/02/11-14:27:24.317 1b003 Generated table #8@1: 11891 keys, 548774 bytes
+2023/02/11-14:27:24.318 1b003 Compacted 1@1 + 1@2 files => 548774 bytes
+2023/02/11-14:27:24.359 1b003 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/02/11-14:27:24.359 1b003 Delete type=2 #7
+2023/02/11-14:27:24.359 1b003 Delete type=2 #5
