@@ -1,90 +1,33 @@
-2023/02/11-09:54:04.141 15e03 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
-2023/02/11-09:54:04.196 15e03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/11-09:54:04.328 1360f Level-0 table #5: started
-2023/02/11-09:54:04.366 1360f Level-0 table #5: 7462 bytes OK
-2023/02/11-09:54:04.403 1360f Delete type=0 #3
-2023/02/11-09:54:04.403 1360f Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
-2023/02/11-09:54:35.201 12e03 Level-0 table #7: started
-2023/02/11-09:54:35.227 12e03 Level-0 table #7: 1042211 bytes OK
-2023/02/11-09:54:35.266 12e03 Delete type=0 #4
-2023/02/11-09:54:41.312 ac03 Level-0 table #9: started
-2023/02/11-09:54:41.353 ac03 Level-0 table #9: 1201298 bytes OK
-2023/02/11-09:54:41.398 ac03 Delete type=0 #6
-2023/02/11-09:54:43.018 16103 Compacting 1@0 + 1@1 files
-2023/02/11-09:54:43.097 16103 Generated table #10@0: 56019 keys, 1298966 bytes
-2023/02/11-09:54:43.097 16103 Compacted 1@0 + 1@1 files => 1298966 bytes
-2023/02/11-09:54:43.136 16103 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/02/11-09:54:43.137 16103 Delete type=2 #7
-2023/02/11-09:54:43.137 16103 Delete type=2 #9
-2023/02/11-09:54:50.959 16103 Level-0 table #12: started
-2023/02/11-09:54:50.998 16103 Level-0 table #12: 1163616 bytes OK
-2023/02/11-09:54:51.035 16103 Delete type=0 #8
-2023/02/11-09:54:51.037 16103 Compacting 1@0 + 1@1 files
-2023/02/11-09:54:51.131 16103 Generated table #13@0: 62109 keys, 2247676 bytes
-2023/02/11-09:54:51.157 16103 Generated table #14@0: 8911 keys, 175325 bytes
-2023/02/11-09:54:51.157 16103 Compacted 1@0 + 1@1 files => 2423001 bytes
-2023/02/11-09:54:51.193 16103 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-09:54:51.194 16103 Delete type=2 #12
-2023/02/11-09:54:51.194 16103 Delete type=2 #10
-2023/02/11-09:54:59.782 ac03 Level-0 table #16: started
-2023/02/11-09:54:59.827 ac03 Level-0 table #16: 1002137 bytes OK
-2023/02/11-09:54:59.865 ac03 Delete type=0 #11
-2023/02/11-09:54:59.871 16103 Compacting 1@0 + 2@1 files
-2023/02/11-09:54:59.981 16103 Generated table #17@0: 77485 keys, 2265670 bytes
-2023/02/11-09:55:00.020 16103 Generated table #18@0: 22997 keys, 595437 bytes
-2023/02/11-09:55:00.020 16103 Compacted 1@0 + 2@1 files => 2861107 bytes
-2023/02/11-09:55:00.058 16103 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-09:55:00.058 16103 Delete type=2 #14
-2023/02/11-09:55:00.058 16103 Delete type=2 #16
-2023/02/11-09:55:00.058 16103 Delete type=2 #13
-2023/02/11-09:55:13.724 ac03 Level-0 table #20: started
-2023/02/11-09:55:13.768 ac03 Level-0 table #20: 1037285 bytes OK
-2023/02/11-09:55:13.807 ac03 Delete type=0 #15
-2023/02/11-09:55:13.815 ac03 Compacting 1@0 + 2@1 files
-2023/02/11-09:55:13.939 ac03 Generated table #21@0: 95562 keys, 2282681 bytes
-2023/02/11-09:55:13.997 ac03 Generated table #22@0: 43894 keys, 1276868 bytes
-2023/02/11-09:55:13.997 ac03 Compacted 1@0 + 2@1 files => 3559549 bytes
-2023/02/11-09:55:14.034 ac03 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-09:55:14.034 ac03 Delete type=2 #17
-2023/02/11-09:55:14.034 ac03 Delete type=2 #20
-2023/02/11-09:55:14.034 ac03 Delete type=2 #18
-2023/02/11-09:55:33.709 12c07 Level-0 table #24: started
-2023/02/11-09:55:33.746 12c07 Level-0 table #24: 1031917 bytes OK
-2023/02/11-09:55:33.786 12c07 Delete type=0 #19
-2023/02/11-09:55:33.789 12c07 Compacting 1@0 + 2@1 files
-2023/02/11-09:55:33.909 12c07 Generated table #25@0: 112997 keys, 2300451 bytes
-2023/02/11-09:55:33.988 12c07 Generated table #26@0: 64759 keys, 1923907 bytes
-2023/02/11-09:55:33.988 12c07 Compacted 1@0 + 2@1 files => 4224358 bytes
-2023/02/11-09:55:34.025 12c07 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-09:55:34.025 12c07 Delete type=2 #21
-2023/02/11-09:55:34.026 12c07 Delete type=2 #22
-2023/02/11-09:55:34.026 12c07 Delete type=2 #24
-2023/02/11-09:55:49.729 15e03 Level-0 table #28: started
-2023/02/11-09:55:49.777 15e03 Level-0 table #28: 987578 bytes OK
-2023/02/11-09:55:49.822 15e03 Delete type=0 #23
-2023/02/11-09:55:50.830 15e03 Compacting 1@0 + 2@1 files
-2023/02/11-09:55:50.966 15e03 Generated table #29@0: 133138 keys, 2326546 bytes
-2023/02/11-09:55:51.052 15e03 Generated table #30@0: 66369 keys, 2220120 bytes
-2023/02/11-09:55:51.080 15e03 Generated table #31@0: 13446 keys, 278793 bytes
-2023/02/11-09:55:51.080 15e03 Compacted 1@0 + 2@1 files => 4825459 bytes
-2023/02/11-09:55:51.118 15e03 compacted to: files[ 0 3 1 0 0 0 0 ]
-2023/02/11-09:55:51.118 15e03 Delete type=2 #28
-2023/02/11-09:55:51.118 15e03 Delete type=2 #26
-2023/02/11-09:55:51.118 15e03 Delete type=2 #25
-2023/02/11-09:56:22.512 16103 Compacting 1@1 + 1@2 files
-2023/02/11-09:56:22.591 16103 Generated table #32@1: 15618 keys, 1362618 bytes
-2023/02/11-09:56:22.591 16103 Compacted 1@1 + 1@2 files => 1362618 bytes
-2023/02/11-09:56:22.629 16103 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-09:56:22.630 16103 Delete type=2 #29
-2023/02/11-09:56:22.630 16103 Delete type=2 #5
-2023/02/11-09:56:46.958 15e03 Level-0 table #34: started
-2023/02/11-09:56:46.997 15e03 Level-0 table #34: 1042558 bytes OK
-2023/02/11-09:56:47.034 15e03 Delete type=0 #27
-2023/02/11-09:57:06.296 12c07 Compacting 1@0 + 2@1 files
-2023/02/11-09:57:06.399 12c07 Generated table #35@0: 72483 keys, 2231497 bytes
-2023/02/11-09:57:06.454 12c07 Generated table #36@0: 43464 keys, 899814 bytes
-2023/02/11-09:57:06.454 12c07 Compacted 1@0 + 2@1 files => 3131311 bytes
-2023/02/11-09:57:06.492 12c07 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/02/11-09:57:06.492 12c07 Delete type=2 #34
-2023/02/11-09:57:06.492 12c07 Delete type=2 #31
-2023/02/11-09:57:06.492 12c07 Delete type=2 #30
+2023/02/11-10:23:20.792 15d03 Creating DB /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/02/11-10:23:20.850 15d03 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/11-10:23:20.988 1130f Level-0 table #5: started
+2023/02/11-10:23:21.008 1130f Level-0 table #5: 7462 bytes OK
+2023/02/11-10:23:21.064 1130f Delete type=0 #3
+2023/02/11-10:23:21.064 11603 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/02/11-10:23:54.048 a903 Level-0 table #7: started
+2023/02/11-10:23:54.088 a903 Level-0 table #7: 1175362 bytes OK
+2023/02/11-10:23:54.127 a903 Delete type=0 #4
+2023/02/11-10:23:58.515 1f503 Compacting 1@1 + 1@2 files
+2023/02/11-10:23:58.554 1f503 Generated table #8@1: 11062 keys, 552661 bytes
+2023/02/11-10:23:58.554 1f503 Compacted 1@1 + 1@2 files => 552661 bytes
+2023/02/11-10:23:58.608 1f503 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/02/11-10:23:58.609 1f503 Delete type=2 #7
+2023/02/11-10:23:58.609 1f503 Delete type=2 #5
+2023/02/11-10:23:58.626 16803 Level-0 table #10: started
+2023/02/11-10:23:58.665 16803 Level-0 table #10: 1287132 bytes OK
+2023/02/11-10:23:58.705 16803 Delete type=0 #6
+2023/02/11-10:23:59.703 16803 Compacting 1@1 + 1@2 files
+2023/02/11-10:23:59.764 16803 Generated table #11@1: 23272 keys, 1156307 bytes
+2023/02/11-10:23:59.764 16803 Compacted 1@1 + 1@2 files => 1156307 bytes
+2023/02/11-10:23:59.801 16803 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/02/11-10:23:59.802 16803 Delete type=2 #10
+2023/02/11-10:23:59.802 16803 Delete type=2 #8
+2023/02/11-10:24:39.589 16803 Level-0 table #13: started
+2023/02/11-10:24:39.626 16803 Level-0 table #13: 1154592 bytes OK
+2023/02/11-10:24:39.666 16803 Delete type=0 #9
+2023/02/11-10:24:39.671 16803 Compacting 1@1 + 1@2 files
+2023/02/11-10:24:39.740 16803 Generated table #14@1: 37348 keys, 2224048 bytes
+2023/02/11-10:24:39.740 16803 Compacted 1@1 + 1@2 files => 2224048 bytes
+2023/02/11-10:24:39.779 16803 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/02/11-10:24:39.779 16803 Delete type=2 #13
+2023/02/11-10:24:39.779 16803 Delete type=2 #11
