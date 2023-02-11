@@ -1,15 +1,3 @@
-2023/02/11-14:56:33.708 a807 Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/11-14:56:33.708 a807 Recovering log #114
-2023/02/11-14:56:33.735 a807 Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000114.log 
-2023/02/11-14:56:33.842 fd03 Level-0 table #120: started
-2023/02/11-14:56:33.886 fd03 Level-0 table #120: 1195434 bytes OK
-2023/02/11-14:56:33.930 fd03 Delete type=0 #114
-2023/02/11-14:56:34.777 fd03 Compacting 1@1 + 2@2 files
-2023/02/11-14:56:34.854 fd03 Generated table #121@1: 23485 keys, 2183539 bytes
-2023/02/11-14:56:34.945 fd03 Generated table #122@1: 86966 keys, 2232265 bytes
-2023/02/11-14:56:34.968 fd03 Generated table #123@1: 3872 keys, 80435 bytes
-2023/02/11-14:56:34.968 fd03 Compacted 1@1 + 2@2 files => 4496239 bytes
-2023/02/11-14:56:35.009 fd03 compacted to: files[ 0 0 3 0 0 0 0 ]
-2023/02/11-14:56:35.010 fd03 Delete type=2 #116
-2023/02/11-14:56:35.010 fd03 Delete type=2 #117
-2023/02/11-14:56:35.010 fd03 Delete type=2 #120
+2023/02/11-15:19:33.136 13f0f Reusing MANIFEST /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/11-15:19:33.137 13f0f Recovering log #125
+2023/02/11-15:19:33.150 13f0f Reusing old log /Users/shelabhtyagi/Ari/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000125.log 
