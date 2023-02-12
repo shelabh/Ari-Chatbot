@@ -7,7 +7,7 @@ const prisma = new PrismaClient()
 const app = express();
 const PORT = 3000;
 
-const { Client, LocalAuth } = require('wweb/index.js');
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
 const { Configuration, OpenAIApi } = require("openai");
