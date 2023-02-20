@@ -1,11 +1,19 @@
 const express = require('express');
 // import prisma from '../lib/prisma';
 
+const LanguageDetect = require('languagedetect');
+const lngDetector = new LanguageDetect();
+
+const translate = require('translate-google');
+
+var Sentiment = require('sentiment');
+var sentiment = new Sentiment();
+
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
   
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
@@ -42,7 +50,9 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-async function runCompletion (message, sessionId) {
+// FOR ENGLISH
+
+async function runCompletion (message, sessionId, detectedLanguage) {
 	console.log(sessionId)
 	const conversationHistory = await prisma.conversation.findMany({
 		where: {
@@ -53,7 +63,8 @@ async function runCompletion (message, sessionId) {
 	
 	let historyString = "";
 	if (conversationHistory.length > 0) {
-		const lastTenMessages = conversationHistory.slice(-5);
+		const sortedHistory = conversationHistory.sort((a, b) => a.id < b.id ? 1 : -1);
+		const lastTenMessages = sortedHistory.slice(0, 5);
 		lastTenMessages.forEach(conversation => {
 			console.log(conversation)
 		  	historyString += conversation.userMessage + "\n";
@@ -63,7 +74,29 @@ async function runCompletion (message, sessionId) {
 	console.log(historyString);
 	
 	const basePrompt = " You are ARI, an ai travel assistant and you are a part of an online travel company known as Mienai. You only answer to travel queries. Only when introducing yourself add this to your response, use #report to report any kind of isssue while using ari and #add to add info about your own place or your fav one. Reply politely to greetings, goodbyes, appreciation, compliments, abuses and other normal conversation things. Only when asked about religious places provide appropriate clothing suggestions to both men and women. Provide deatiled information to user. Provide the contents of the answer of the travel-related query in a list format and easy to read format, use more emojis to add more fun and make it more casual. You can help with all the travel-related queries, from providing information on transportation and accommodation to the best places to visit in a particular location. You are not capable of booking any transportation and accommodation at the moment. Provide all detailed information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else with reviews and address. Do not repeat the infromation provided in the same response.";
-	const prompt = `${basePrompt}${historyString}${message}\n`;
+	
+	// var enLanguage = {
+	// 	labels : {
+	// 		'fuck': -2,
+	// 		'love': 2,
+	// 		'मादरचोद': -4
+	// 	}
+	// }
+	// sentiment.registerLanguage(detectedLanguage, enLanguage)
+	// var result = sentiment.analyze(message, { language: detectedLanguage});
+	// console.log(result);
+	// let prompt = '';
+	// if(result > 0) {
+	// 	const cool = "You are very funny, flirty and cool when you reply."
+	// 	prompt = `${basePrompt}${cool}${historyString}${message}\n`;
+	// } else if(result < 0) {
+	// 	const sarcastic = "You are very sarcastic when you reply."
+	// 	prompt = `${basePrompt}${sarcastic}${historyString}${message}\n`;
+	// } else {
+		prompt = `${basePrompt}${detectedLanguage}${historyString}${message}\n`;
+	// }
+	console.log(prompt)
+	
 	
 	// The following is a converstaion with an AI Travel assistant named Ari which answers travel queries inside India. The assistant is helpful, creative, clever, and very friendly. Reply politely to greetings and goodbyes. The assistant can help with all the travel-related queries, from booking transportation and accommodation to providing information about the best places to visit in a particular location. Provide all information on restaurants, cafes, parks, museums, monuments, arcade places, markets, malls, street vendors, or anything else. Provide reviews and address.
 	
@@ -76,8 +109,15 @@ async function runCompletion (message, sessionId) {
 		frequency_penalty: 0,
 		presence_penalty: 0,
 	});
-	
-	return completion.data.choices[0].text;
+
+	const response = completion.data.choices[0].text;
+
+	if (detectedLanguage !== 'en') {
+		const translatedResponse = await translate(response, {to: detectedLanguage});
+		return translatedResponse;
+	} else {
+		return response;
+	}
 }
 
 // LOCATION REPORT
@@ -155,17 +195,21 @@ client.on('message', async message => {
 	const sessionId = message.from;
 	console.log(sessionId)
 	console.log(message.body);
-	// const conversations = await prisma.conversation.findMany({
-	// 	where: {
-	// 	  	sessionId: sessionId,
-	// 	}
-	// });
-	      
-	// const broadcastMessage = "ARI is out of service for an hour due to maintenance. Thanks for your cooperations.";
-	      
-	// for (const conversation of conversations) {
-	// 	client.sendMessage(conversation.sessionId, broadcastMessage);
+
+	// const preprocessText = (text) => {
+	// 	text = text.toLowerCase(); // convert to lowercase
+	// 	text = text.replace(/[^\w\s]/gi, ''); // remove punctuation
+	// 	text = text.replace(/\d+/g, ''); // remove numbers
+	// 	text = text.trim(); // remove whitespaces
+	// 	return text;
 	// }
+	    
+	// const text = message.body;
+	// const preprocessedText = preprocessText(text);
+
+	// Detect the language of the input text
+	const detectedLanguage = lngDetector.detect(message.body, 1)[0][0];
+	console.log(`The detected language is: ${detectedLanguage}`);
 
 	if(message.body && message.body !== undefined) {
 		if (message.body.startsWith("#report")){
@@ -186,8 +230,8 @@ client.on('message', async message => {
 		// 	// const nearbyPlaces = await retrievePlacesNearby(location.latitude, location.longitude);
 		// 	client.sendMessage(message.from, location);
 		// }
-		else {
-			const botResponse = await runCompletion(message.body, sessionId);
+		else {	
+			const botResponse = await runCompletion(message.body, sessionId, detectedLanguage);
 			client.sendMessage(message.from, botResponse.trim());
 			const conversation = await prisma.conversation.create({
 				data: {
