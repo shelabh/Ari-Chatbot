@@ -223,7 +223,7 @@ client.on('message', async message => {
 			client.sendMessage(message.from, weather)
 		}
 		else if(message.body.includes('shelabh') || message.body.includes('Shelabh')){
-			client.sendMessage(message.from, "He is the founder of Mienai, an online travel commany and my creator.")
+			client.sendMessage(message.from, "He is the founder of Mienai, an online travel commany based in India and my creator.")
 		}
 		// else if(message.body.includes("https://www.google.com/maps")) {
 		// 	const location = handleLocationLink(message.body);
