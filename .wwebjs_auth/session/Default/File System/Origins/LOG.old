@@ -1,3 +1,2 @@
-2023/03/19-19:00:01.846 a303 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/File System/Origins/MANIFEST-000001
-2023/03/19-19:00:01.847 a303 Recovering log #3
-2023/03/19-19:00:01.847 a303 Reusing old log /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/File System/Origins/000003.log 
+2023/04/09-13:29:25.182 1fa03 Creating DB /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/File System/Origins since it was missing.
+2023/04/09-13:29:25.239 1fa03 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/File System/Origins/MANIFEST-000001

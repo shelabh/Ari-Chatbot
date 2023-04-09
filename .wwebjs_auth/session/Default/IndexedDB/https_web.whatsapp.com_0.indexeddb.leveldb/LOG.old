@@ -1,3 +1,28 @@
-2023/03/19-19:00:01.832 13603 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/03/19-19:00:01.833 13603 Recovering log #459
-2023/03/19-19:00:01.884 13603 Reusing old log /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000459.log 
+2023/04/09-13:29:24.429 1fc03 Creating DB /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/04/09-13:29:24.488 1fc03 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/04/09-13:29:24.632 15803 Level-0 table #5: started
+2023/04/09-13:29:24.671 15803 Level-0 table #5: 7472 bytes OK
+2023/04/09-13:29:24.712 15803 Delete type=0 #3
+2023/04/09-13:29:24.712 15803 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/04/09-13:30:10.770 fd03 Level-0 table #7: started
+2023/04/09-13:30:10.813 fd03 Level-0 table #7: 1089328 bytes OK
+2023/04/09-13:30:10.852 fd03 Delete type=0 #4
+2023/04/09-13:30:36.122 fd03 Level-0 table #9: started
+2023/04/09-13:30:36.160 fd03 Level-0 table #9: 1164672 bytes OK
+2023/04/09-13:30:36.200 fd03 Delete type=0 #6
+2023/04/09-13:30:36.204 fd03 Compacting 1@0 + 1@1 files
+2023/04/09-13:30:36.286 fd03 Generated table #10@0: 49434 keys, 1762762 bytes
+2023/04/09-13:30:36.286 fd03 Compacted 1@0 + 1@1 files => 1762762 bytes
+2023/04/09-13:30:36.325 fd03 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/04/09-13:30:36.326 fd03 Delete type=2 #7
+2023/04/09-13:30:36.326 fd03 Delete type=2 #9
+2023/04/09-13:30:36.598 fd03 Level-0 table #12: started
+2023/04/09-13:30:36.634 fd03 Level-0 table #12: 1100832 bytes OK
+2023/04/09-13:30:36.676 fd03 Delete type=0 #8
+2023/04/09-13:30:36.683 fd03 Compacting 1@0 + 1@1 files
+2023/04/09-13:30:36.769 fd03 Generated table #13@0: 56550 keys, 2229417 bytes
+2023/04/09-13:30:36.798 fd03 Generated table #14@0: 9255 keys, 213988 bytes
+2023/04/09-13:30:36.798 fd03 Compacted 1@0 + 1@1 files => 2443405 bytes
+2023/04/09-13:30:36.838 fd03 compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/04/09-13:30:36.839 fd03 Delete type=2 #12
+2023/04/09-13:30:36.839 fd03 Delete type=2 #10

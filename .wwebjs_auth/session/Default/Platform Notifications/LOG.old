@@ -1,3 +1,2 @@
-2023/03/19-18:59:39.455 a903 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Platform Notifications/MANIFEST-000001
-2023/03/19-18:59:39.455 a903 Recovering log #3
-2023/03/19-18:59:39.455 a903 Reusing old log /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Platform Notifications/000003.log 
+2023/04/09-13:30:09.286 15803 Creating DB /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Platform Notifications since it was missing.
+2023/04/09-13:30:09.365 15803 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Platform Notifications/MANIFEST-000001
