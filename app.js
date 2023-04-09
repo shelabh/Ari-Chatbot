@@ -10,7 +10,7 @@ const express = require('express');
 const translate = require('translate-google');
 
 var Sentiment = require('sentiment');
-var sentiment = new Sentiment();
+// var sentiment = new Sentiment();
 
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
