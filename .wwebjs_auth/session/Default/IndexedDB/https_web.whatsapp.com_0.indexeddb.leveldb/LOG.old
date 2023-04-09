@@ -1,24 +1,3 @@
-2023/02/14-00:07:30.455 a803 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/14-00:07:30.455 a803 Recovering log #386
-2023/02/14-00:07:30.490 a803 Reusing old log /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000386.log 
-2023/02/14-00:08:18.149 16203 Level-0 table #397: started
-2023/02/14-00:08:18.192 16203 Level-0 table #397: 1274707 bytes OK
-2023/02/14-00:08:18.232 16203 Delete type=0 #386
-2023/02/14-00:08:44.020 a303 Compacting 1@1 + 7@2 files
-2023/02/14-00:08:44.101 a303 Generated table #398@1: 29195 keys, 2260100 bytes
-2023/02/14-00:08:44.175 a303 Generated table #399@1: 24219 keys, 2269657 bytes
-2023/02/14-00:08:44.240 a303 Generated table #400@1: 23868 keys, 2273772 bytes
-2023/02/14-00:08:44.295 a303 Generated table #401@1: 54188 keys, 2270121 bytes
-2023/02/14-00:08:44.356 a303 Generated table #402@1: 53171 keys, 2225029 bytes
-2023/02/14-00:08:44.428 a303 Generated table #403@1: 68015 keys, 2214348 bytes
-2023/02/14-00:08:44.472 a303 Generated table #404@1: 33179 keys, 692196 bytes
-2023/02/14-00:08:44.472 a303 Compacted 1@1 + 7@2 files => 14205223 bytes
-2023/02/14-00:08:44.512 a303 compacted to: files[ 0 0 7 0 0 0 0 ]
-2023/02/14-00:08:44.513 a303 Delete type=2 #388
-2023/02/14-00:08:44.513 a303 Delete type=2 #389
-2023/02/14-00:08:44.513 a303 Delete type=2 #394
-2023/02/14-00:08:44.513 a303 Delete type=2 #397
-2023/02/14-00:08:44.513 a303 Delete type=2 #393
-2023/02/14-00:08:44.513 a303 Delete type=2 #392
-2023/02/14-00:08:44.514 a303 Delete type=2 #390
-2023/02/14-00:08:44.514 a303 Delete type=2 #391
+2023/03/19-19:00:01.832 13603 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/19-19:00:01.833 13603 Recovering log #459
+2023/03/19-19:00:01.884 13603 Reusing old log /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000459.log 

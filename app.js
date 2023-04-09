@@ -1,8 +1,11 @@
 const express = require('express');
 // import prisma from '../lib/prisma';
 
-const LanguageDetect = require('languagedetect');
-const lngDetector = new LanguageDetect();
+// const LanguageDetection = require('@smodin/fast-text-language-detection')
+// const lid = new LanguageDetection()
+
+// import { detect } from 'franc';
+
 
 const translate = require('translate-google');
 
@@ -52,7 +55,7 @@ const openai = new OpenAIApi(configuration);
 
 // FOR ENGLISH
 
-async function runCompletion (message, sessionId, detectedLanguage) {
+async function runCompletion (message, sessionId, ) { //detectedLanguage
 	console.log(sessionId)
 	const conversationHistory = await prisma.conversation.findMany({
 		where: {
@@ -93,7 +96,7 @@ async function runCompletion (message, sessionId, detectedLanguage) {
 	// 	const sarcastic = "You are very sarcastic when you reply."
 	// 	prompt = `${basePrompt}${sarcastic}${historyString}${message}\n`;
 	// } else {
-		prompt = `${basePrompt}${detectedLanguage}${historyString}${message}\n`;
+		prompt = `${basePrompt}${historyString}${message}\n`;// ${detectedLanguage}
 	// }
 	console.log(prompt)
 	
@@ -112,12 +115,14 @@ async function runCompletion (message, sessionId, detectedLanguage) {
 
 	const response = completion.data.choices[0].text;
 
-	if (detectedLanguage !== 'en') {
-		const translatedResponse = await translate(response, {to: detectedLanguage});
-		return translatedResponse;
-	} else {
-		return response;
-	}
+	return response;
+
+	// if (detectedLanguage !== 'en') {
+	// 	const translatedResponse = await translate(response, {to: detectedLanguage});
+	// 	return translatedResponse;
+	// } else {
+	// 	return response;
+	// }
 }
 
 // LOCATION REPORT
@@ -208,8 +213,8 @@ client.on('message', async message => {
 	// const preprocessedText = preprocessText(text);
 
 	// Detect the language of the input text
-	const detectedLanguage = lngDetector.detect(message.body, 1)[0][0];
-	console.log(`The detected language is: ${detectedLanguage}`);
+	// const detectedLanguage = await lid.predict([message.body]);
+	// console.log(`The detected language is: ${detectedLanguage[0].label}`);
 
 	if(message.body && message.body !== undefined) {
 		if (message.body.startsWith("#report")){
@@ -231,7 +236,7 @@ client.on('message', async message => {
 		// 	client.sendMessage(message.from, location);
 		// }
 		else {	
-			const botResponse = await runCompletion(message.body, sessionId, detectedLanguage);
+			const botResponse = await runCompletion(message.body, sessionId, ); // detectedLanguage
 			client.sendMessage(message.from, botResponse.trim());
 			const conversation = await prisma.conversation.create({
 				data: {
