@@ -7,7 +7,7 @@ const express = require('express');
 // import { detect } from 'franc';
 
 
-const translate = require('translate-google');
+// const translate = require('translate-google');
 
 var Sentiment = require('sentiment');
 // var sentiment = new Sentiment();
