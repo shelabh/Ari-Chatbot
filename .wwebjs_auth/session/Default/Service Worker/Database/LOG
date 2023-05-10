@@ -1,3 +1,2 @@
-2023/04/09-14:33:34.827 fd03 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Service Worker/Database/MANIFEST-000001
-2023/04/09-14:33:34.828 fd03 Recovering log #3
-2023/04/09-14:33:34.828 fd03 Reusing old log /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Service Worker/Database/000003.log 
+2023/05/11-01:36:08.098 1f103 Creating DB /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Service Worker/Database since it was missing.
+2023/05/11-01:36:08.156 1f103 Reusing MANIFEST /Users/shelabhtyagi/Documents/GitHub/Ari-Chatbot/.wwebjs_auth/session/Default/Service Worker/Database/MANIFEST-000001
